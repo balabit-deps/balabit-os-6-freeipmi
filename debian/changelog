@@ -1,3 +1,9 @@
+freeipmi (1.4.11-1.1ubuntu4~0.16.04bb1) xenial; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Wed, 14 Feb 2018 15:56:15 +0100
+
 freeipmi (1.4.11-1.1ubuntu4~0.16.04) xenial; urgency=medium
 
   * Backport to xenial
