@@ -1,3 +1,48 @@
+freeipmi (1.4.11-1.1ubuntu4~0.16.04) xenial; urgency=medium
+
+  * Backport to xenial
+    Use kernel DMI table interface, when available, instead of trolling
+    /dev/mem to avoid a crash on ARM. LP: #1699933.
+
+ -- Ike Panhc <ike.pan@canonical.com>  Fri, 30 Jun 2017 11:01:05 +0800
+
+freeipmi (1.4.11-1.1ubuntu4) artful; urgency=medium
+
+  * Use kernel DMI table interface, when available, instead of trolling
+    /dev/mem to avoid a crash on ARM. LP: #1699933.
+
+ -- dann frazier <dann.frazier@canonical.com>  Wed, 28 Jun 2017 13:26:09 -0600
+
+freeipmi (1.4.11-1.1ubuntu3) zesty; urgency=medium
+
+  * Add ipv6 ipmi-discovery. LP: #1645912.  See also:
+    https://github.com/chu11/freeipmi-mirror/pull/12/commits/32721f88cd37aa4ca1564c243669f96628089986
+
+ -- LaMont Jones <lamont@canonical.com>  Tue, 24 Jan 2017 16:22:05 -0700
+
+freeipmi (1.4.11-1.1ubuntu2) zesty; urgency=medium
+
+  * Add IPv6 support to ipmipower.  This partially addresses lp bug 1618543.
+
+ -- LaMont Jones <lamont@canonical.com>  Wed, 23 Nov 2016 08:17:27 -0700
+
+freeipmi (1.4.11-1.1ubuntu1) zesty; urgency=low
+
+  * Merge from Debian unstable.  Remaining changes:
+    - debian/rules: Build with "-pie,-bindnow"
+    - Use dh-autoreconf to update libtool for ppc64el.
+    - Fix dso linking on the convenience library.
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Thu, 20 Oct 2016 23:07:23 -0700
+
+freeipmi (1.4.11-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Fix "not binNMU safe" (Closes: #829085) by making freeipmi-common
+    arch:any instead of arch:all. A better fix can be found later if required.
+
+ -- Vincent Danjean <vdanjean@debian.org>  Mon, 05 Sep 2016 09:55:48 +0200
+
 freeipmi (1.4.11-1ubuntu1bb1) UNRELEASED; urgency=medium
 
   * Balabit patched version
