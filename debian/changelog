@@ -1,16 +1,27 @@
+freeipmi (1.4.11-1.1ubuntu4.1~0.16.04) xenial; urgency=medium
+
+  * Backport to xenial.
+
+ -- dann frazier <dann.frazier@canonical.com>  Thu, 14 Feb 2019 14:13:56 -0700
+
+freeipmi (1.4.11-1.1ubuntu4.1) bionic; urgency=medium
+
+  * Cherry-pick patches from upstream that add support to ipmi-locate
+    for parsing ACPI/SPMI tables out of sysfs (LP: #1784926):
+    - 0001-Fix-acpi-spmi-searching-corner-case.patch
+    - 0002-Don-t-try-to-separate-the-header-from-the-ACPI-table.patch
+    - 0003-Split-RSDT-XSDT-parsing-into-new-function.patch
+    - 0004-Add-support-for-parsing-SPMI-tables-exposed-via-sysf.patch
+    - 0005-Allow-sysfs-SPMI-parsing-on-ARM-platforms.patch
+    - 0006-Correct-order-of-bytes-in-specification_revision-fie.patch
+
+ -- dann frazier <dann.frazier@canonical.com>  Fri, 03 Aug 2018 13:59:53 -0600
+
 freeipmi (1.4.11-1.1ubuntu4~0.16.04bb1) xenial; urgency=medium
 
   * Balabit patched version
 
  -- Balabit Platform Team <devnull@dev.null>  Wed, 14 Feb 2018 15:56:15 +0100
-
-freeipmi (1.4.11-1.1ubuntu4~0.16.04) xenial; urgency=medium
-
-  * Backport to xenial
-    Use kernel DMI table interface, when available, instead of trolling
-    /dev/mem to avoid a crash on ARM. LP: #1699933.
-
- -- Ike Panhc <ike.pan@canonical.com>  Fri, 30 Jun 2017 11:01:05 +0800
 
 freeipmi (1.4.11-1.1ubuntu4) artful; urgency=medium
 
